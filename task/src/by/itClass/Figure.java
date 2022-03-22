@@ -2,11 +2,11 @@ package by.itClass;
 
 public abstract class Figure {
 
-    String nameFigure;
-    Point startLine;
-    Point endLine;
+    protected String nameFigure;
+    protected Point startLine;
+    protected Point endLine;
 
-    Figure(String nameFigure, Point startLine, Point endLine) {
+    protected Figure(String nameFigure, Point startLine, Point endLine) {
         this.nameFigure = nameFigure;
         this.startLine = startLine;
         this.endLine = endLine;
