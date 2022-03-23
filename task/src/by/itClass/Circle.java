@@ -7,7 +7,7 @@ public class Circle extends Figure {
     }
 
     @Override
-    public double square(Point startLine, Point endLine) {
+    public double square() {
         double x2 = Math.pow(endLine.getX() - startLine.getX(), 2);
         double y2 = Math.pow(endLine.getY() - startLine.getY(), 2);
         double radius = Math.pow((x2 + y2), 0.5);
@@ -15,7 +15,7 @@ public class Circle extends Figure {
     }
 
     @Override
-    public double perimeter(Point startLine, Point endLine) {
+    public double perimeter() {
         double x2 = Math.pow(endLine.getX() - startLine.getX(), 2);
         double y2 = Math.pow(endLine.getY() - startLine.getY(), 2);
         double radius = Math.pow((x2 + y2), 0.5);

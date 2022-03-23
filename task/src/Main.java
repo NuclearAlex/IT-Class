@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Figure circle = new Circle("Circle", new Point(0, 0), new Point(2, 2));
-        double p1 = circle.perimeter(new Point(0, 0), new Point(2, 2));
-        double s1 = circle.square(new Point(0, 0), new Point(2, 2));
+        double p1 = circle.perimeter();
+        double s1 = circle.square();
 
         System.out.println("First figure: " + circle.getNameFigure());
         System.out.printf("Its points: x(%.0f, %.0f), y(%.0f, %.0f)\n", circle.getStartLine().getX(),
@@ -15,8 +15,8 @@ public class Main {
 
 
         Figure rectangle = new Rectangle("Rectangle", new Point(0, 0), new Point(3, 3));
-        double p2 = rectangle.perimeter(new Point(0, 0), new Point(3, 3));
-        double s2 = rectangle.square(new Point(0, 0), new Point(3, 3));
+        double p2 = rectangle.perimeter();
+        double s2 = rectangle.square();
 
         System.out.println("Second figure: " + rectangle.getNameFigure());
         System.out.printf("Its points: x(%.0f, %.0f), y(%.0f, %.0f)\n", rectangle.getStartLine().getX(),
@@ -27,8 +27,8 @@ public class Main {
 
         Figure triangleEquilateral =
                 new TriangleEquilateral("Equilateral triangle", new Point(0, 0), new Point(4, 4));
-        double p3 = triangleEquilateral.perimeter(new Point(0, 0), new Point(4, 4));
-        double s3 = triangleEquilateral.square(new Point(0, 0), new Point(4, 4));
+        double p3 = triangleEquilateral.perimeter();
+        double s3 = triangleEquilateral.square();
 
         System.out.println("Third figure: " + triangleEquilateral.getNameFigure());
         System.out.printf("Its points: x(%.0f, %.0f), y(%.0f, %.0f)\n", triangleEquilateral.getStartLine().getX(),
@@ -39,8 +39,8 @@ public class Main {
 
         Figure triangleRectangular =
                 new TriangleRectangular("Rectangular triangle", new Point(0, 0), new Point(5, 5));
-        double p4 = triangleRectangular.perimeter(new Point(0, 0), new Point(5, 5));
-        double s4 = triangleRectangular.square(new Point(0, 0), new Point(5, 5));
+        double p4 = triangleRectangular.perimeter();
+        double s4 = triangleRectangular.square();
 
         System.out.println("Fourth figure: " + triangleRectangular.getNameFigure());
         System.out.printf("Its points: x(%.0f, %.0f), y(%.0f, %.0f)\n", triangleRectangular.getStartLine().getX(),

@@ -36,8 +36,8 @@ public abstract class Figure {
         this.endLine = endLine;
     }
 
-    public abstract double square(Point startLine, Point endLine);
+    public abstract double square();
 
-    public abstract double perimeter(Point startLine, Point endLine);
+    public abstract double perimeter();
 
 }

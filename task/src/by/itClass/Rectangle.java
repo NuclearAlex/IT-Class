@@ -7,14 +7,14 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public double square(Point startLine, Point endLine) {
+    public double square() {
         double x = endLine.getX() - startLine.getX();
         double y = endLine.getY() - startLine.getY();
         return x * y;
     }
 
     @Override
-    public double perimeter(Point startLine, Point endLine) {
+    public double perimeter() {
         double x = endLine.getX() - startLine.getX();
         double y = endLine.getY() - startLine.getY();
         return x * 2 + y * 2;
